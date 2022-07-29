@@ -1,0 +1,13 @@
+# Multi-GPU training MONAI example with PyTorch
+
+## build MONAI container 
+using ./build_container.sh
+
+## multi-GPU slurm job submission on single node and multiNode
+1. modify the USER definition section in the launch_**.sh
+2. Submit a SLURM job script launch.sh to launch a training
+
+## Single-node multi-GPU interactive run
+1. use ood to request resources
+2. modifiy the USER definition section in interactive.sh   
+3. run ./interactive.sh

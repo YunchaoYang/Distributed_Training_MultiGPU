@@ -1,0 +1,552 @@
+/home/hityangsir/red/MultiNode_MONAI_example/monai-ddp-not_torchlaunch-example
+c1007a-s29.ufhpc
+Mon Aug  1 14:12:38 EDT 2022
+Primary node: c1007a-s29
+Primary TCP port: 32088
+Secondary nodes: c1007a-s35
+Running "/mnt/unet_training_ddp_slurm.py" on each node...
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /etc/localtime required more than 50 (92) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+WARNING: underlay of /usr/bin/nvidia-smi required more than 50 (473) bind mounts
+[65718] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '13', 'WORLD_SIZE': '16'}
+[65716] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '11', 'WORLD_SIZE': '16'}
+[65719] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '14', 'WORLD_SIZE': '16'}
+[65715] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '15', 'WORLD_SIZE': '16'}
+[65712] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '8', 'WORLD_SIZE': '16'}
+[65713] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '9', 'WORLD_SIZE': '16'}
+[65714] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '10', 'WORLD_SIZE': '16'}
+[65717] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '12', 'WORLD_SIZE': '16'}
+[251161] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '4', 'WORLD_SIZE': '16'}
+[251165] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '7', 'WORLD_SIZE': '16'}
+[251160] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '5', 'WORLD_SIZE': '16'}
+[251163] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '2', 'WORLD_SIZE': '16'}
+[251162] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '6', 'WORLD_SIZE': '16'}
+[251167] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '0', 'WORLD_SIZE': '16'}
+[251166] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '1', 'WORLD_SIZE': '16'}
+[251164] Initializing process group with: {'MASTER_ADDR': 'c1007a-s29', 'MASTER_PORT': '32088', 'RANK': '3', 'WORLD_SIZE': '16'}
+251167 Local rank is 0, total GPU is 8, current device is 0
+251166 Local rank is 1, total GPU is 8, current device is 0
+251163 Local rank is 2, total GPU is 8, current device is 0
+251164 Local rank is 3, total GPU is 8, current device is 0
+251161 Local rank is 4, total GPU is 8, current device is 0
+251160 Local rank is 5, total GPU is 8, current device is 0
+251162 Local rank is 6, total GPU is 8, current device is 0
+251165 Local rank is 7, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 1 using best-guess GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 3 using best-guess GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 4 using best-guess GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 6 using best-guess GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 7 using best-guess GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 2 using best-guess GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 0 using best-guess GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+[W ProcessGroupNCCL.cpp:1671] Rank 5 using best-guess GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65712 Local rank is 0, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 8 using best-guess GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65713 Local rank is 1, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 9 using best-guess GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65714 Local rank is 2, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 10 using best-guess GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65716 Local rank is 3, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 11 using best-guess GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65717 Local rank is 4, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 12 using best-guess GPU 4 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65718 Local rank is 5, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 13 using best-guess GPU 5 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65719 Local rank is 6, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 14 using best-guess GPU 6 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+65715 Local rank is 7, total GPU is 8, current device is 0
+[W ProcessGroupNCCL.cpp:1671] Rank 15 using best-guess GPU 7 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect.Specify device_ids in barrier() to force use of a particular device.
+NCCL version 2.10.3+cuda11.4
+[8] ---------- epoch 1/5
+[9] ---------- epoch 1/5
+[10] ---------- epoch 1/5
+[11] ---------- epoch 1/5
+[12] ---------- epoch 1/5
+[13] ---------- epoch 1/5
+[14] ---------- epoch 1/5
+[15] ---------- epoch 1/5
+[0] ---------- epoch 1/5
+[1] ---------- epoch 1/5
+[2] ---------- epoch 1/5
+[3] ---------- epoch 1/5
+[4] ---------- epoch 1/5
+[5] ---------- epoch 1/5
+[6] ---------- epoch 1/5
+[7] ---------- epoch 1/5
+[8] 1/32, train_loss: 0.6728
+[9] 1/32, train_loss: 0.6616
+[10] 1/32, train_loss: 0.7463
+[11] 1/32, train_loss: 0.6236
+[12] 1/32, train_loss: 0.6196
+[13] 1/32, train_loss: 0.6419
+[14] 1/32, train_loss: 0.6670
+[15] 1/32, train_loss: 0.6445
+[0] 1/32, train_loss: 0.6516
+[1] 1/32, train_loss: 0.6642
+[2] 1/32, train_loss: 0.7160
+[3] 1/32, train_loss: 0.6979
+[4] 1/32, train_loss: 0.6383
+[5] 1/32, train_loss: 0.6236
+[6] 1/32, train_loss: 0.7069
+[7] 1/32, train_loss: 0.6287
+[8] 2/32, train_loss: 0.5586
+[9] 2/32, train_loss: 0.6115
+[10] 2/32, train_loss: 0.6229
+[11] 2/32, train_loss: 0.6120
+[12] 2/32, train_loss: 0.5852
+[13] 2/32, train_loss: 0.6087
+[14] 2/32, train_loss: 0.6202
+[15] 2/32, train_loss: 0.5941
+[0] 2/32, train_loss: 0.5689
+[1] 2/32, train_loss: 0.6467
+[2] 2/32, train_loss: 0.5724
+[3] 2/32, train_loss: 0.7102
+[4] 2/32, train_loss: 0.6534
+[5] 2/32, train_loss: 0.6070
+[6] 2/32, train_loss: 0.5781
+[7] 2/32, train_loss: 0.5694
+[9] epoch 1, average loss: 0.6365
+[9] ---------- epoch 2/5
+[8] epoch 1, average loss: 0.6157
+[8] ---------- epoch 2/5
+[13] epoch 1, average loss: 0.6253
+[13] ---------- epoch 2/5
+[2] epoch 1, average loss: 0.6442
+[2] ---------- epoch 2/5
+[4] epoch 1, average loss: 0.6459
+[4] ---------- epoch 2/5
+[5] epoch 1, average loss: 0.6153
+[5] ---------- epoch 2/5
+[6] epoch 1, average loss: 0.6425
+[6] ---------- epoch 2/5
+[7] epoch 1, average loss: 0.5991
+[7] ---------- epoch 2/5
+[0] epoch 1, average loss: 0.6103
+[0] ---------- epoch 2/5
+[1] epoch 1, average loss: 0.6555
+[1] ---------- epoch 2/5
+[3] epoch 1, average loss: 0.7040
+[3] ---------- epoch 2/5
+[10] epoch 1, average loss: 0.6846
+[10] ---------- epoch 2/5
+[11] epoch 1, average loss: 0.6178
+[11] ---------- epoch 2/5
+[12] epoch 1, average loss: 0.6024
+[12] ---------- epoch 2/5
+[14] epoch 1, average loss: 0.6436
+[14] ---------- epoch 2/5
+[15] epoch 1, average loss: 0.6193
+[15] ---------- epoch 2/5
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[8] 1/32, train_loss: 0.5335
+[9] 1/32, train_loss: 0.5759
+[10] 1/32, train_loss: 0.6595
+[11] 1/32, train_loss: 0.5636
+[12] 1/32, train_loss: 0.5499
+[13] 1/32, train_loss: 0.5684
+[14] 1/32, train_loss: 0.5690
+[0] 1/32, train_loss: 0.5659
+[15] 1/32, train_loss: 0.6083
+[2] 1/32, train_loss: 0.5880
+[6] 1/32, train_loss: 0.5664
+[7] 1/32, train_loss: 0.6659
+[4] 1/32, train_loss: 0.5923
+[5] 1/32, train_loss: 0.6121
+[1] 1/32, train_loss: 0.5337
+[3] 1/32, train_loss: 0.6174
+[8] 2/32, train_loss: 0.5800
+[0] 2/32, train_loss: 0.5484
+[9] 2/32, train_loss: 0.4966
+[3] 2/32, train_loss: 0.5302
+[10] 2/32, train_loss: 0.5178
+[6] 2/32, train_loss: 0.5913
+[11] 2/32, train_loss: 0.4929
+[7] 2/32, train_loss: 0.6349
+[12] 2/32, train_loss: 0.5710
+[2] 2/32, train_loss: 0.5595
+[13] 2/32, train_loss: 0.5465
+[4] 2/32, train_loss: 0.5403
+[14] 2/32, train_loss: 0.5739
+[5] 2/32, train_loss: 0.5574
+[15] 2/32, train_loss: 0.4800
+[1] 2/32, train_loss: 0.5292
+[4] epoch 2, average loss: 0.5663
+[4] ---------- epoch 3/5
+[12] epoch 2, average loss: 0.5604
+[12] ---------- epoch 3/5
+[13] epoch 2, average loss: 0.5575
+[13] ---------- epoch 3/5
+[0] epoch 2, average loss: 0.5572
+[0] ---------- epoch 3/5
+[1] epoch 2, average loss: 0.5314
+[1] ---------- epoch 3/5
+[11] epoch 2, average loss: 0.5282
+[11] ---------- epoch 3/5
+[10] epoch 2, average loss: 0.5886
+[10] ---------- epoch 3/5
+[2] epoch 2, average loss: 0.5738
+[2] ---------- epoch 3/5
+[6] epoch 2, average loss: 0.5789
+[6] ---------- epoch 3/5
+[7] epoch 2, average loss: 0.6504
+[7] ---------- epoch 3/5
+[3] epoch 2, average loss: 0.5738
+[3] ---------- epoch 3/5
+[5] epoch 2, average loss: 0.5848
+[5] ---------- epoch 3/5
+[9] epoch 2, average loss: 0.5362
+[9] ---------- epoch 3/5
+[14] epoch 2, average loss: 0.5715
+[14] ---------- epoch 3/5
+[15] epoch 2, average loss: 0.5442
+[15] ---------- epoch 3/5
+[8] epoch 2, average loss: 0.5568
+[8] ---------- epoch 3/5
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[0] 1/32, train_loss: 0.5382
+[1] 1/32, train_loss: 0.5478
+[2] 1/32, train_loss: 0.5731
+[3] 1/32, train_loss: 0.5175
+[4] 1/32, train_loss: 0.5535
+[5] 1/32, train_loss: 0.5695
+[6] 1/32, train_loss: 0.5553
+[7] 1/32, train_loss: 0.5438
+[8] 1/32, train_loss: 0.5320
+[9] 1/32, train_loss: 0.4609
+[10] 1/32, train_loss: 0.5771
+[11] 1/32, train_loss: 0.4711
+[12] 1/32, train_loss: 0.5383
+[14] 1/32, train_loss: 0.5700
+[15] 1/32, train_loss: 0.5492
+[13] 1/32, train_loss: 0.5356
+[0] 2/32, train_loss: 0.4950
+[1] 2/32, train_loss: 0.5178
+[8] 2/32, train_loss: 0.5105
+[2] 2/32, train_loss: 0.4935
+[9] 2/32, train_loss: 0.5433
+[3] 2/32, train_loss: 0.4984
+[10] 2/32, train_loss: 0.4810
+[4] 2/32, train_loss: 0.5020
+[11] 2/32, train_loss: 0.4824
+[5] 2/32, train_loss: 0.6719
+[12] 2/32, train_loss: 0.5107
+[6] 2/32, train_loss: 0.5870
+[13] 2/32, train_loss: 0.5639
+[7] 2/32, train_loss: 0.5210
+[14] 2/32, train_loss: 0.5059
+[15] 2/32, train_loss: 0.5617
+[4] epoch 3, average loss: 0.5277
+[4] ---------- epoch 4/5
+[9] epoch 3, average loss: 0.5021
+[9] ---------- epoch 4/5
+[6] epoch 3, average loss: 0.5711
+[6] ---------- epoch 4/5
+[15] epoch 3, average loss: 0.5554
+[15] ---------- epoch 4/5
+[0] epoch 3, average loss: 0.5166
+[0] ---------- epoch 4/5
+[2] epoch 3, average loss: 0.5333
+[2] ---------- epoch 4/5
+[3] epoch 3, average loss: 0.5079
+[3] ---------- epoch 4/5
+[7] epoch 3, average loss: 0.5324
+[7] ---------- epoch 4/5
+[11] epoch 3, average loss: 0.4768
+[11] ---------- epoch 4/5
+[1] epoch 3, average loss: 0.5328
+[1] ---------- epoch 4/5
+[5] epoch 3, average loss: 0.6207
+[5] ---------- epoch 4/5
+[8] epoch 3, average loss: 0.5212
+[8] ---------- epoch 4/5
+[10] epoch 3, average loss: 0.5290
+[10] ---------- epoch 4/5
+[12] epoch 3, average loss: 0.5245
+[12] ---------- epoch 4/5
+[13] epoch 3, average loss: 0.5498
+[13] ---------- epoch 4/5
+[14] epoch 3, average loss: 0.5379
+[14] ---------- epoch 4/5
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[8] 1/32, train_loss: 0.5025
+[9] 1/32, train_loss: 0.4915
+[10] 1/32, train_loss: 0.4829
+[0] 1/32, train_loss: 0.5354
+[11] 1/32, train_loss: 0.5357
+[12] 1/32, train_loss: 0.5534
+[1] 1/32, train_loss: 0.5179
+[13] 1/32, train_loss: 0.5245
+[2] 1/32, train_loss: 0.6025
+[14] 1/32, train_loss: 0.4846
+[3] 1/32, train_loss: 0.6155
+[15] 1/32, train_loss: 0.5579
+[5] 1/32, train_loss: 0.4971
+[6] 1/32, train_loss: 0.4788
+[7] 1/32, train_loss: 0.5181
+[4] 1/32, train_loss: 0.4942
+[0] 2/32, train_loss: 0.4932
+[8] 2/32, train_loss: 0.5085
+[1] 2/32, train_loss: 0.5595
+[9] 2/32, train_loss: 0.4701
+[2] 2/32, train_loss: 0.4578
+[10] 2/32, train_loss: 0.5487
+[3] 2/32, train_loss: 0.4703
+[11] 2/32, train_loss: 0.4888
+[5] 2/32, train_loss: 0.4964
+[12] 2/32, train_loss: 0.5522
+[6] 2/32, train_loss: 0.4899
+[13] 2/32, train_loss: 0.5634
+[7] 2/32, train_loss: 0.5121
+[14] 2/32, train_loss: 0.5017
+[15] 2/32, train_loss: 0.5046
+[4] 2/32, train_loss: 0.5041
+[6] epoch 4, average loss: 0.4844
+[6] ---------- epoch 5/5
+[8] epoch 4, average loss: 0.5055
+[8] ---------- epoch 5/5
+[9] epoch 4, average loss: 0.4808
+[9] ---------- epoch 5/5
+[10] epoch 4, average loss: 0.5158
+[10] ---------- epoch 5/5
+[11] epoch 4, average loss: 0.5123
+[11] ---------- epoch 5/5
+[12] epoch 4, average loss: 0.5528
+[12] ---------- epoch 5/5
+[13] epoch 4, average loss: 0.5440
+[13] ---------- epoch 5/5
+[0] epoch 4, average loss: 0.5143
+[0] ---------- epoch 5/5
+[2] epoch 4, average loss: 0.5301
+[2] ---------- epoch 5/5
+[3] epoch 4, average loss: 0.5429
+[3] ---------- epoch 5/5
+[5] epoch 4, average loss: 0.4968
+[5] ---------- epoch 5/5
+[7] epoch 4, average loss: 0.5151
+[7] ---------- epoch 5/5
+[1] epoch 4, average loss: 0.5387
+[1] ---------- epoch 5/5
+[4] epoch 4, average loss: 0.4992
+[4] ---------- epoch 5/5
+[14] epoch 4, average loss: 0.4932
+[14] ---------- epoch 5/5
+[15] epoch 4, average loss: 0.5312
+[15] ---------- epoch 5/5
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[W pthreadpool-cpp.cc:99] Warning: Leaking Caffe2 thread-pool after fork. (function pthreadpool)
+[9] 1/32, train_loss: 0.5376
+[10] 1/32, train_loss: 0.4924
+[0] 1/32, train_loss: 0.5218
+[11] 1/32, train_loss: 0.6008
+[1] 1/32, train_loss: 0.5822
+[12] 1/32, train_loss: 0.4674
+[2] 1/32, train_loss: 0.4615
+[13] 1/32, train_loss: 0.4328
+[3] 1/32, train_loss: 0.4920
+[14] 1/32, train_loss: 0.4757
+[4] 1/32, train_loss: 0.5432
+[15] 1/32, train_loss: 0.5137
+[5] 1/32, train_loss: 0.4629
+[6] 1/32, train_loss: 0.5068
+[7] 1/32, train_loss: 0.4443
+[8] 1/32, train_loss: 0.4372
+[8] 2/32, train_loss: 0.5083
+[9] 2/32, train_loss: 0.5215
+[10] 2/32, train_loss: 0.4612
+[11] 2/32, train_loss: 0.4559
+[12] 2/32, train_loss: 0.5075
+[0] 2/32, train_loss: 0.4958
+[13] 2/32, train_loss: 0.5370
+[1] 2/32, train_loss: 0.5382
+[14] 2/32, train_loss: 0.5285
+[2] 2/32, train_loss: 0.5414
+[15] 2/32, train_loss: 0.4560
+[3] 2/32, train_loss: 0.4812
+[5] 2/32, train_loss: 0.4916
+[6] 2/32, train_loss: 0.4967
+[7] 2/32, train_loss: 0.4664
+[4] 2/32, train_loss: 0.4844
+[7] epoch 5, average loss: 0.4553
+[7] train completed, epoch losses: [0.59909787774086, 0.6504098773002625, 0.5324024260044098, 0.5151167511940002, 0.45531831681728363]
+[13] epoch 5, average loss: 0.4849
+[13] train completed, epoch losses: [0.6252867579460144, 0.5574605762958527, 0.5497590005397797, 0.5439727902412415, 0.48493829369544983]
+[6] epoch 5, average loss: 0.5018
+[6] train completed, epoch losses: [0.6425236463546753, 0.5788773000240326, 0.5711394548416138, 0.4843602925539017, 0.5017648339271545]
+[12] epoch 5, average loss: 0.4875
+[12] train completed, epoch losses: [0.6023811399936676, 0.5604146420955658, 0.5244987607002258, 0.552809864282608, 0.487477645277977]
+[0] epoch 5, average loss: 0.5088
+[0] train completed, epoch losses: [0.6102784276008606, 0.5571753680706024, 0.5166104435920715, 0.5142836570739746, 0.5087824463844299]
+[4] epoch 5, average loss: 0.5138
+[4] train completed, epoch losses: [0.645867794752121, 0.5663187205791473, 0.5277310311794281, 0.4991513788700104, 0.5138138830661774]
+[3] epoch 5, average loss: 0.4866
+[3] train completed, epoch losses: [0.7040474116802216, 0.5737886428833008, 0.5079455524682999, 0.5429000556468964, 0.4865901619195938]
+[1] epoch 5, average loss: 0.5602
+[1] train completed, epoch losses: [0.6554679870605469, 0.5314329266548157, 0.5327774286270142, 0.5387018322944641, 0.5602039098739624]
+[2] epoch 5, average loss: 0.5015
+[2] train completed, epoch losses: [0.6442232429981232, 0.5737533271312714, 0.5333111882209778, 0.5301495343446732, 0.5014750957489014]
+[15] epoch 5, average loss: 0.4849
+[15] train completed, epoch losses: [0.619301825761795, 0.54415562748909, 0.5554442703723907, 0.5312439799308777, 0.4848565459251404]
+[8] epoch 5, average loss: 0.4728
+[8] train completed, epoch losses: [0.6157234013080597, 0.5567722618579865, 0.5212487280368805, 0.5055339634418488, 0.47276557981967926]
+[5] epoch 5, average loss: 0.4772
+[5] train completed, epoch losses: [0.6153018176555634, 0.5847614407539368, 0.6207104325294495, 0.49676866829395294, 0.4772410988807678]
+[9] epoch 5, average loss: 0.5295
+[9] train completed, epoch losses: [0.636540412902832, 0.5362358093261719, 0.5021408647298813, 0.4808243364095688, 0.5295124351978302]
+[10] epoch 5, average loss: 0.4768
+[10] train completed, epoch losses: [0.6845777630805969, 0.5886401236057281, 0.5290410667657852, 0.5158198177814484, 0.4768011271953583]
+[11] epoch 5, average loss: 0.5283
+[11] train completed, epoch losses: [0.6177668869495392, 0.5282313078641891, 0.47675664722919464, 0.5122764408588409, 0.5283380001783371]
+[14] epoch 5, average loss: 0.5021
+[14] train completed, epoch losses: [0.6435949802398682, 0.571450412273407, 0.5379234850406647, 0.49315014481544495, 0.5020841360092163]

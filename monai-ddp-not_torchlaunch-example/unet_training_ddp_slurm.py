@@ -77,7 +77,7 @@ def train(args):
     # parameters used to initialize the process group
     env_dict = {
         key: os.environ[key]
-        for key in ("MASTER_ADDR", "MASTER_PORT", "RANK", "WORLD_SIZE")
+        for key in ("MASTER_ADDR", "MASTER_PORT", "RANK", "LOCAL_RANK", "WORLD_SIZE")
     }
     print(f"[{os.getpid()}] Initializing process group with: {env_dict}")
 
@@ -105,8 +105,8 @@ def train(args):
     print(f"{os.getpid()} Local rank is {local_rank}, total GPU is {torch.cuda.device_count()}, current device is {torch.cuda.current_device()}")
     # do not use #SBATCH gpu_per_task = 1, otherwise torch.cuda.device_count() = 1
     
-    #    #dist.barrier(device_ids=[int(os.environ["LOCAL_RANK"])]) # RuntimeError: CUDA error: invalid device ordinal 
-    dist.barrier() #Yunchao, 
+    dist.barrier(device_ids=[int(os.environ["LOCAL_RANK"])]) # RuntimeError: CUDA error: invalid device ordinal 
+    # dist.barrier() #Yunchao, 
     
     images = sorted(glob(os.path.join(args.dir, "img*.nii.gz")))
     segs = sorted(glob(os.path.join(args.dir, "seg*.nii.gz")))
@@ -145,11 +145,11 @@ def train(args):
     # the reason is that we 
     
      
-    # create UNet, DiceLoss and Adam optimizer  
     device = torch.device(f'cuda:{os.environ["LOCAL_RANK"]}')     
-    # device = torch.device(f'cuda:{torch.cuda.current_device()}') #Yunchao change, same erro as before
-    
+    # device = torch.device(f'cuda:{torch.cuda.current_device()}') #Yunchao change, same erro as before    
     torch.cuda.set_device(device)
+
+    # create UNet, DiceLoss and Adam optimizer      
     model = monai.networks.nets.UNet(
         dimensions=3,
         in_channels=1,
@@ -160,6 +160,7 @@ def train(args):
     ).to(device)
     loss_function = monai.losses.DiceLoss(sigmoid=True)  
     optimizer = torch.optim.Adam(model.parameters(), 1e-3)
+
     # wrap the model with DistributedDataParallel module
     model = DistributedDataParallel(model, device_ids=[device])
 
@@ -196,6 +197,19 @@ def train(args):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--dir", default="./testdata", type=str, help="directory to create random data")
+
+    #DDP
+    parser.add_argument('--world-size', default=-1, type=int, 
+                        help='number of nodes for distributed training')
+    parser.add_argument('--rank', default=-1, type=int, 
+                        help='node rank for distributed training')
+    parser.add_argument('--dist-url', default='env://', type=str, 
+                        help='url used to set up distributed training')
+    parser.add_argument('--dist-backend', default='nccl', type=str, 
+                        help='distributed backend')
+    parser.add_argument('--local_rank', default=-1, type=int, 
+                        help='local rank for distributed training')
+
     args = parser.parse_args()
 
     # set env variables required by dist.init_process_group(init_method="env://")
@@ -205,6 +219,10 @@ def main():
     # "PRIMARY_PORT" & "PRIMARY" are set by launch script
     os.environ["MASTER_PORT"] = os.environ["PRIMARY_PORT"] 
     os.environ["MASTER_ADDR"] = os.environ["PRIMARY"]
+
+    args.world_size = int(os.environ["WORLD_SIZE"] )
+    args.gpu = int(os.environ["LOCAL_RANK"])
+    args.rank = int(os.environ["RANK"])
 
     train(args=args)
 

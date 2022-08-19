@@ -79,4 +79,4 @@ echo "Running \"$TRAINING_CMD\" on each node..."
 
 module load singularity
 
-srun --unbuffered "$PT_LAUNCH_SCRIPT" "${PT_LAUNCH_UTILS_PATH}" "$TRAINING_CMD" "$PYTHON_PATH"
+srun --export=ALL "$PT_LAUNCH_SCRIPT" "${PT_LAUNCH_UTILS_PATH}" "$TRAINING_CMD" "$PYTHON_PATH"

@@ -72,27 +72,30 @@ def parse_args():
                                          
 def main(args):
 
+    print(os.environ["WORLD_SIZE"])
     # DDP setting
     if "WORLD_SIZE" in os.environ:
+        print(os.environ["WORLD_SIZE"])
         args.world_size = int(os.environ["WORLD_SIZE"])
     args.distributed = args.world_size > 1
-
+    print(args.distributed, args.local_rank)
+    
     if args.distributed:
         if args.local_rank != -1: # for torch.distributed.launch
             args.rank = args.local_rank
             args.gpu = args.local_rank
 
         elif 'SLURM_PROCID' in os.environ: # for slurm scheduler, but not using torch.distributed.launch
+            print("use SLURM environment variables to DDP")
             args.rank = int(os.environ['SLURM_PROCID'])            
             os.environ["RANK"] = os.environ["SLURM_PROCID"]
-
-            args.gpu = args.rank % torch.cuda.device_count() # int(os.environ["SLURM_LOCALID"]) # 
             os.environ["LOCAL_RANK"] = os.environ["SLURM_LOCALID"]
+            args.gpu = int(os.environ["SLURM_LOCALID"]) # args.rank % torch.cuda.device_count() # both two ways work
 
     # parameters used to initialize the process group
     env_dict = {
         key: os.environ[key]
-        for key in ("MASTER_ADDR", "MASTER_PORT", "RANK", "WORLD_SIZE")
+        for key in ("MASTER_ADDR", "MASTER_PORT", "RANK",  "LOCAL_RANK", "WORLD_SIZE")
     }
 
     print(f"PID=[{os.getpid()}], on Node:{socket.gethostname()} GPU:{args.gpu} initializing process group with: {env_dict}")

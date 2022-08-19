@@ -5,18 +5,30 @@
 
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=8
-#SBATCH --gpus=8 ### Note: --gres=gpu:x should equal to ntasks-per-node
+
+#SBATCH --gpus=16 
+
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=128gb
 
+#SBATCH --account=bala-gatorflow
+#SBATCH --qos=bala-gatorflow
+#SBATCH --reservation=gatorflow
+
 #SBATCH --output=%x.%j.out
+#SBATCH --error=%x.%j.err
 
 module load cuda/11.4.3 pytorch/1.10
 
 ### change 5-digit MASTER_PORT as you wish, slurm will raise Error if duplicated with others
 ### change WORLD_SIZE as gpus/node * num_nodes
 export MASTER_PORT=12340
-export WORLD_SIZE=$((SLURM_JOB_NUM_NODES*SLURM_GPUS_PER_NODE))
+#export WORLD_SIZE=$((SLURM_JOB_NUM_NODES*SLURM_GPUS_PER_NODE))
+echo SLURM_JOB_NUM_NODES=$SLURM_JOB_NUM_NODES
+echo SLURM_TASKS_PER_NODE=$SLURM_TASKS_PER_NODE # 8(x2)
+
+# export WORLD_SIZE=$((SLURM_JOB_NUM_NODES*SLURM_TASKS_PER_NODE)) #error
+export WORLD_SIZE=$SLURM_NTASKS
 
 ### get the first node name as master address - customized for vgg slurm
 ### e.g. master(gnodee[2-5],gnoded1) == gnodee2
@@ -41,5 +53,5 @@ export NCCL_SOCKET_IFNAME=bridge-1145
 #conda activate myenv
 
 ### the command to run
-srun --export=ALL --unbuffered python main_env_srun.py --epochs 20 
+srun --export=ALL python main_env_srun.py --epochs 20 
 

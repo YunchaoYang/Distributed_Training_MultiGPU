@@ -31,6 +31,7 @@ class AE(nn.Module):
         return reconstructed
 
 def train(gpu, args):
+
     args.gpu = gpu
 
     # 1 For interactive jobs:

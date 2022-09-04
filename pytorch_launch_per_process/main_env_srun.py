@@ -69,6 +69,7 @@ def parse_args():
                         help='local rank for distributed training')
     args = parser.parse_args()
     return args
+
                                          
 def main(args):
 
@@ -224,7 +225,9 @@ def validate(val_loader, model, criterion, epoch, args):
     pass
 
 if __name__ == '__main__':
+
     args = parse_args()
+
     main(args)
 
     print("Job finished")

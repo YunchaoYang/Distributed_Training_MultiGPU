@@ -1,0 +1,140 @@
+
+Lmod is automatically replacing "conda/4.12.0" with "pytorch/1.10".
+
+slurmstepd: error: execve(): hostname: No such file or directory
+srun: error: c0900a-s23: task 0: Exited with exit code 2
+Node IP:
+192.168.128.177 192.168.128.178 192.168.128.179 192.168.128.180 10.13.140.45 192.168.128.181 192.168.128.182 192.168.128.183 192.168.128.184 10.13.140.46 172.16.204.45 10.13.172.45 192.168.122.1 172.17.0.1
+Node IP: 172.16.204.45
+/home/hityangsir/parallel/MultiGPU_Training_Examples/pytorch_launch_per_node/torchrun/tutorial/ddp-tutorial-series/slurm
+c0900a-s23.ufhpc
+Tue Nov  8 13:07:34 EST 2022
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : multigpu_torchrun.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 31628
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 172.16.204.45:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /scratch/local/51169335/torchelastic_whkwqueb/31628_un6qffg4
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : multigpu_torchrun.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 31628
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 172.16.204.45:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /scratch/local/51169335/torchelastic_rm5ih3e2/31628__tth4qgx
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=c0900a-s23.ufhpc
+  master_port=32883
+  group_rank=0
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[0, 1]
+  global_ranks=[0, 1]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /scratch/local/51169335/torchelastic_whkwqueb/31628_un6qffg4/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /scratch/local/51169335/torchelastic_whkwqueb/31628_un6qffg4/attempt_0/1/error.json
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=c0900a-s23.ufhpc
+  master_port=32883
+  group_rank=1
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[2, 3]
+  global_ranks=[2, 3]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /scratch/local/51169335/torchelastic_rm5ih3e2/31628__tth4qgx/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /scratch/local/51169335/torchelastic_rm5ih3e2/31628__tth4qgx/attempt_0/1/error.json
+Loading snapshot
+Resuming training from snapshot at Epoch 40
+Loading snapshot
+Resuming training from snapshot at Epoch 40
+Loading snapshot
+Resuming training from snapshot at Epoch 40
+Loading snapshot
+Resuming training from snapshot at Epoch 40
+[RANK2: local GPU0] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 41 | Batchsize: 32 | Steps: 16
+Epoch 40 | Training snapshot saved at snapshot.pt
+[RANK2: local GPU0] Epoch 41 | Batchsize: 32 | Steps: 16
+Epoch 40 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 42 | Batchsize: 32 | Steps: 16[RANK3: local GPU1] Epoch 42 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU0] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU1] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 49 | Batchsize: 32 | Steps: 16
+INFO:torch.distributed.elastic.agent.server.api:[default] worker group successfully finished. Waiting 300 seconds for other agents to finish.
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (SUCCEEDED). Waiting 300 seconds for other agents to finish
+INFO:torch.distributed.elastic.agent.server.api:[default] worker group successfully finished. Waiting 300 seconds for other agents to finish.
+INFO:torch.distributed.elastic.agent.server.api:Local worker group finished (SUCCEEDED). Waiting 300 seconds for other agents to finish
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.000240325927734375 seconds
+INFO:torch.distributed.elastic.agent.server.api:Done waiting for other agents. Elapsed: 0.06684589385986328 seconds
+WARNING:torch.distributed.elastic.rendezvous.dynamic_rendezvous:The node 'c0900a-s29.ufhpc_55260_0' has failed to shutdown the rendezvous '31628' due to an error of type RendezvousConnectionError.

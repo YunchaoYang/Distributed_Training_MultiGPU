@@ -1,0 +1,3 @@
+[submodule "MultiGPU-NeMo-ptune"]
+	path = MultiGPU-NeMo-ptune
+	url = git@github.com:YunchaoYang/MultiGPU-NeMo-ptune.git

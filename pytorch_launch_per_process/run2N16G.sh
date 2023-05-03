@@ -1,19 +1,13 @@
 #!/bin/bash
 
-#SBATCH --partition=hpg-ai
 #SBATCH --time=72:00:00
-
+#SBATCH --partition=hpg-ai
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=8
-
 #SBATCH --gpus=16 
 
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=128gb
-
-#SBATCH --account=bala-gatorflow
-#SBATCH --qos=bala-gatorflow
-#SBATCH --reservation=gatorflow
 
 #SBATCH --output=%x.%j.out
 #SBATCH --error=%x.%j.err
@@ -40,7 +34,6 @@ export MASTER_ADDR=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
 echo "MASTER_ADDR="$MASTER_ADDR
 
 echo "$SLURM_NODEID Launching job script"
-
 echo "WORLD SIZE = $WORLD_SIZE"
 
 EXCLUDE_IB_LIST=mlx5_4,mlx5_5,mlx5_10,mlx5_11

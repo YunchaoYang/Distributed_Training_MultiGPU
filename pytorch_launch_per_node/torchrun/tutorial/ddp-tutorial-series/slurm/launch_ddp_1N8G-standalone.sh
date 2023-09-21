@@ -19,14 +19,14 @@
 # Resource allocation.
 #SBATCH --wait-all-nodes=1
 
-#SBATCH --nodes=4               # How many DGX nodes? Each has 8 A100 GPUs
-#SBATCH --ntasks=4              # How many tasks? One per GPU
+#SBATCH --nodes=1               # How many DGX nodes? Each has 8 A100 GPUs
+#SBATCH --ntasks=1              # How many tasks? One per GPU
 #SBATCH --ntasks-per-node=1     # Split 8 per node for the 8 GPUs
-#SBATCH --gpus-per-task=1       # #GPU per srun step task
+#SBATCH --gpus-per-task=8       # #GPU per srun step task
 
 ##SBATCH --gpus=8                # Total GPUs
 
-#SBATCH --cpus-per-task=4       # How many CPU cores per task, upto 16 for 8 tasks per node
+#SBATCH --cpus-per-task=16       # How many CPU cores per task, upto 16 for 8 tasks per node
 #SBATCH --mem=24gb             # CPU memory per node--up to 1TB (Not GPU memory--that is 80GB per A100 GPU)
 #SBATCH --partition=hpg-ai      # Specify the HPG AI partition
 
@@ -35,14 +35,17 @@
 #SBATCH --output=%x.%j.out
 
 #SBATCH --reservation=el8-hpgai
+
 export NCCL_DEBUG=WARN #change to INFO if debugging DDP
 
-echo "Primary node: $PRIMARY"
-echo "Primary TCP port: $PRIMARY_PORT"
-echo "Secondary nodes: $SECONDARIES"
+pwd;date;hostname
+
+#echo "Primary node: $PRIMARY"
+#echo "Primary TCP port: $PRIMARY_PORT"
+#echo "Secondary nodes: $SECONDARIES"
 
 module load conda
-conda activate pytorch_lightning
+conda activate torch-timm
 
 nodes=( $( scontrol show hostnames $SLURM_JOB_NODELIST ) )
 nodes_array=($nodes)
@@ -52,13 +55,20 @@ head_node_ip=$(srun --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
 echo Node IP: $head_node_ip
 export LOGLEVEL=INFO
 
-pwd; hostname; date
+
+#srun --export=ALL torchrun \
+#--nnodes 1 \
+#--nproc_per_node 1 \
+#--rdzv_id $RANDOM \
+#--rdzv_backend c10d \
+#--rdzv_endpoint $head_node_ip:29500 \
+#multigpu_torchrun.py 50 10
 
 srun --export=ALL torchrun \
---nnodes 4 \
+--nnodes 1 \
 --nproc_per_node 1 \
---rdzv_id $RANDOM \
---rdzv_backend c10d \
---rdzv_endpoint $head_node_ip:29500 \
+--nproc_per_node=$SLURM_GPUS_PER_TASK \
 multigpu_torchrun.py 50 10
+
+
 

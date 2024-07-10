@@ -1,0 +1,1140 @@
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470f65de000000b8'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147125e30000000b9'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147072779000000ba'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147187084000000bb'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470c7752000000bc'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147052e63000000bd'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e3820000000bf'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471da059000000be'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014718c5d2000000c2'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014712d46c000000c1'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470835a4000000c3'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471da072000000c0'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471b351c000000c5'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014720fab7000000c4'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470fabc8000000c6'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147154d33000000c7'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e1352000000c9'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471d567d000000ca'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014717dffa000000c8'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471da0e1000000cb'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e14d8000000cd'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147072a6d000000cc'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147154d63000000ce'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470afa4a000000cf'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470837ac000000d2'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147183093000000d0'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014709c4f2000000d3'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014712d513000000d1'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014708f66b000000d4'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014712d7f6000000d4'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471ae63f000000d5'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470ccd8f000000d6'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014709498e000000d7'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014716d48c000000d8'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147052fdd000000da'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471594c1000000d9'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470f834c000000db'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147160e3a000000dc'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014709721e000000de'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471dc821000000dd'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471660d2000000df'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014716d73a000000df'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470c7a83000000e0'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471d7b9a000000e0'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470cf082000000e1'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147212d16000000e2'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147153388000000e3'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147133562000000e4'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014718a976000000e6'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147124c3a000000e5'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147179f43000000e8'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e5a8e000000e7'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472c6e39000000e9'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472e690d000000ea'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471c967b000000eb'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147174ff7000000ec'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147306406000000ee'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470c818f000000ed'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014712e21e000000f0'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e21c9000000ef'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001473018bd000000f1'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001470ecd4f000000f2'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014734d230000000f3'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472133ca000000f4'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147287e1b000000f5'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014718d9e3000000f6'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147211752000000f7'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147157af7000000f8'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472fcee5000000fa'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472b469f000000f9'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471842b9000000fc'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471a36e4000000fb'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001471e2d66000000ff'
+/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/site-packages/PIL/TiffImagePlugin.py:785: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014733256c000000fd'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472ca343000000fe'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472888a000000100'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs0000000147288a9d00000101'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs00000001472e9ed800000102'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014730a33700000104'
+Traceback (most recent call last):
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/multiprocessing/util.py", line 133, in _remove_temp_dir
+    rmtree(tempdir)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 718, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 675, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/red/ufhpc/hityangsir/.conda/envs/torch-timm/lib/python3.8/shutil.py", line 673, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+OSError: [Errno 16] Device or resource busy: '.nfs000000014739bbcf00000103'

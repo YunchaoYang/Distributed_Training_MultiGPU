@@ -3,10 +3,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.err
-*.out
+#*.err
+#*.out
 *.tar
 #.tar.gz
+core.*
+
+*/__pycache__/*
 
 *~
 data/

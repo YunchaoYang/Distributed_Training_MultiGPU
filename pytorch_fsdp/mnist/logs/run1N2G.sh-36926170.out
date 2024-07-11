@@ -1,0 +1,47 @@
+192.168.128.177
+r0 master: c0900a-s23.ufhpc
+r0 Launching python script
+WORLD_SIZE=2
+Train Epoch: 1 	Loss: 0.231129
+Test set: Average loss: 0.0566, Accuracy: 9831/10000 (98.31%)
+
+Train Epoch: 2 	Loss: 0.080975
+Test set: Average loss: 0.0371, Accuracy: 9878/10000 (98.78%)
+
+Train Epoch: 3 	Loss: 0.061330
+Test set: Average loss: 0.0291, Accuracy: 9909/10000 (99.09%)
+
+Train Epoch: 4 	Loss: 0.051390
+Test set: Average loss: 0.0313, Accuracy: 9896/10000 (98.96%)
+
+Train Epoch: 5 	Loss: 0.044715
+Test set: Average loss: 0.0285, Accuracy: 9904/10000 (99.04%)
+
+Train Epoch: 6 	Loss: 0.041707
+Test set: Average loss: 0.0285, Accuracy: 9912/10000 (99.12%)
+
+Train Epoch: 7 	Loss: 0.038200
+Test set: Average loss: 0.0274, Accuracy: 9914/10000 (99.14%)
+
+Train Epoch: 8 	Loss: 0.038203
+Test set: Average loss: 0.0280, Accuracy: 9916/10000 (99.16%)
+
+Train Epoch: 9 	Loss: 0.036307
+Test set: Average loss: 0.0273, Accuracy: 9916/10000 (99.16%)
+
+Train Epoch: 10 	Loss: 0.036847
+Test set: Average loss: 0.0277, Accuracy: 9913/10000 (99.13%)
+
+CUDA event elapsed time: 106.6434609375sec
+FullyShardedDataParallel(
+  (_fsdp_wrapped_module): FlattenParamsWrapper(
+    (_fpw_module): Net(
+      (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+      (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+      (dropout1): Dropout(p=0.25, inplace=False)
+      (dropout2): Dropout(p=0.5, inplace=False)
+      (fc1): Linear(in_features=9216, out_features=128, bias=True)
+      (fc2): Linear(in_features=128, out_features=10, bias=True)
+    )
+  )
+)

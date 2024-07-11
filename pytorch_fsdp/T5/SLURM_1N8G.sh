@@ -4,8 +4,9 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:a100:4
-#SBATCH --cpus-per-task=16
+#SBATCH --gres=gpu:a100:8
+
+#SBATCH --cpus-per-task=32
 
 #SBATCH --time=08:00:00
 #SBATCH --mem=240gb
@@ -34,5 +35,5 @@ export MASTER_ADDR=$(hostname)
 echo "r$SLURM_NODEID master: $MASTER_ADDR"
 echo "r$SLURM_NODEID Launching python script"
 
-torchrun --nnodes 1 --nproc_per_node 4  T5_training.py
+torchrun --nnodes 1 --nproc_per_node 8  T5_training.py
 

@@ -14,6 +14,9 @@ import torch.distributed as dist
 import torch.multiprocessing as mp
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data.distributed import DistributedSampler
+
+##########################################################################
+## FSDP
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
     CPUOffload,
@@ -25,6 +28,9 @@ from torch.distributed.fsdp.wrap import (
     wrap,
 )
 
+
+##########################################################################
+## setup distributed process environment
 def setup(rank, world_size):
     os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '12355'
@@ -106,6 +112,9 @@ def test(model, rank, world_size, test_loader):
 
 
 def fsdp_main(rank, world_size, args):
+
+    ##########################################################################
+    #setup environment
     setup(rank, world_size)
 
     transform=transforms.Compose([
@@ -141,7 +150,8 @@ def fsdp_main(rank, world_size, args):
     init_end_event = torch.cuda.Event(enable_timing=True)
 
     model = Net().to(rank)
-
+    ##########################################################################
+    # FSDP wrapper
     model = FSDP(model)
 
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
@@ -194,6 +204,8 @@ if __name__ == '__main__':
     WORLD_SIZE = torch.cuda.device_count()
 
     print(f"WORLD_SIZE={WORLD_SIZE}")
+
+    ##########################################################################
     mp.spawn(fsdp_main,
         args=(WORLD_SIZE, args),
         nprocs=WORLD_SIZE,

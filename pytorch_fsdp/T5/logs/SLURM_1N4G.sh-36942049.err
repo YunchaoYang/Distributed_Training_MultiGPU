@@ -1,2 +1,0 @@
-slurmstepd: error: execve(): torchrun: No such file or directory
-srun: error: c1100a-s17: task 0: Exited with exit code 2

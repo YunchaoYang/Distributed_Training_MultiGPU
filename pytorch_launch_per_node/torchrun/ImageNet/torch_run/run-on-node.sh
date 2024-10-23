@@ -25,4 +25,3 @@ python main.py \
      --epoch 10 \
      --batch-size 256 \
      imagenet \
-     

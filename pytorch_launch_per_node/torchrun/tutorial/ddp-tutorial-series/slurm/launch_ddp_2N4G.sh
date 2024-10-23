@@ -34,6 +34,8 @@
 #SBATCH --time=48:00:00
 #SBATCH --output=%x.%j.out
 
+#SBATCH --exclude=c0901a-s[23,35]
+
 # export NCCL_DEBUG=WARN #change to INFO if debugging DDP
 
 module load pytorch/1.10
@@ -44,7 +46,7 @@ nodes=( $( scontrol show hostnames $SLURM_JOB_NODELIST ) )
 nodes_array=($nodes)
 head_node=${nodes_array[0]}
 
-head_node_ip=$(srun --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
+head_node_ip=$(srun --export=ALL --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
 echo Node IP: $head_node_ip
 
 #head_node_ip=`hostname -I | awk '{print $2}'`

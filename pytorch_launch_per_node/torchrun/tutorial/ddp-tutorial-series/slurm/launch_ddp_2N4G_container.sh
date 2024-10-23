@@ -22,11 +22,11 @@
 #SBATCH --nodes=2               # How many DGX nodes? Each has 8 A100 GPUs
 #SBATCH --ntasks=2              # How many tasks? One per GPU
 #SBATCH --ntasks-per-node=1     # Split 8 per node for the 8 GPUs
-#SBATCH --gpus-per-task=8       # #GPU per srun step task
+#SBATCH --gpus-per-task=2       # #GPU per srun step task
 
-##SBATCH --gpus=16               # Total GPUs
+##SBATCH --gpus=4                # Total GPUs
 
-#SBATCH --cpus-per-task=32       # How many CPU cores per task, upto 16 for 8 tasks per node
+#SBATCH --cpus-per-task=4       # How many CPU cores per task, upto 16 for 8 tasks per node
 #SBATCH --mem=24gb             # CPU memory per node--up to 1TB (Not GPU memory--that is 80GB per A100 GPU)
 #SBATCH --partition=hpg-ai      # Specify the HPG AI partition
 
@@ -34,42 +34,39 @@
 #SBATCH --time=48:00:00
 #SBATCH --output=%x.%j.out
 
-#SBATCH --reservation=bianjiang
+#SBATCH --exclude=c0901a-s[23,35]
 
-export NCCL_DEBUG=WARN #change to INFO if debugging DDP
+# export NCCL_DEBUG=WARN #change to INFO if debugging DDP
 
-pwd;date;hostname
-
-#echo "Primary node: $PRIMARY"
-#echo "Primary TCP port: $PRIMARY_PORT"
-#echo "Secondary nodes: $SECONDARIES"
-
-module load conda
-conda activate torch-timm
+module load pytorch/1.10
+# module load conda
+# conda activate pytorch_lightning
 
 nodes=( $( scontrol show hostnames $SLURM_JOB_NODELIST ) )
 nodes_array=($nodes)
 head_node=${nodes_array[0]}
-head_node_ip=$(srun --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
 
+head_node_ip=$(srun --export=ALL --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
 echo Node IP: $head_node_ip
+
+#head_node_ip=`hostname -I | awk '{print $2}'`
+head_node_ip=`hostname --ip-address`
+
+echo `hostname -I` 
+echo Node IP: $head_node_ip
+
 export LOGLEVEL=INFO
 
+pwd; hostname; date
 
-#srun --export=ALL torchrun \
-#--nnodes 1 \
-#--nproc_per_node 1 \
-#--rdzv_id $RANDOM \
-#--rdzv_backend c10d \
-#--rdzv_endpoint $head_node_ip:29500 \
-#multigpu_torchrun.py 50 10
+export IMG="/blue/vendor-nvidia/y.yang/test_vila/pytorch:24.06-py3"
 
-srun --export=ALL torchrun \
-     --nnodes=$SLURM_JOB_NUM_NODES \
-     --nproc_per_node=$SLURM_GPUS_PER_TASK \
-     --rdzv_id $RANDOM \
-     --rdzv_backend c10d \
-     --rdzv_endpoint $head_node_ip:29500 \
-     multigpu_torchrun.py 50 10
-
+srun --export=ALL apptainer exec --nv $IMG \
+torchrun \
+--nnodes 2 \
+--nproc_per_node 2 \
+--rdzv_id $RANDOM \
+--rdzv_backend c10d \
+--rdzv_endpoint $head_node_ip:29500 \
+multigpu_torchrun.py 50 10
 

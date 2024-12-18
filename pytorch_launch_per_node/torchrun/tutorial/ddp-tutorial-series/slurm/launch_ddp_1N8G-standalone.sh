@@ -34,7 +34,10 @@
 #SBATCH --time=48:00:00
 #SBATCH --output=%x.%j.out
 
-#SBATCH --reservation=el8-hpgai
+##SBATCH --reservation=el8-hpgai
+
+#SBATCH --nodelist=c0803a-s35
+
 
 export NCCL_DEBUG=WARN #change to INFO if debugging DDP
 

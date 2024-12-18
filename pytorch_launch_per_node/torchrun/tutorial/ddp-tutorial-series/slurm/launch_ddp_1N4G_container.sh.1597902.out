@@ -1,0 +1,99 @@
+Node IP: 172.16.204.29
+172.16.204.29 169.254.0.18 192.168.128.113 192.168.128.114 192.168.128.115 192.168.128.116 10.13.140.29 192.168.128.117 192.168.128.118 192.168.128.119 192.168.128.120 10.13.140.30 10.13.172.29 2620:104:1f:1001:e42:a1ff:fe5d:2a69
+Node IP: 172.16.204.29
+/home/hityangsir/red/codebase/MultiGPU_Training_Examples/pytorch_launch_per_node/torchrun/tutorial/ddp-tutorial-series/slurm
+c0803a-s35.ufhpc
+Fri Oct 25 14:08:15 EDT 2024
+INFO:    Environment variable SINGULARITY_DOCKER_PASSWORD is set, but APPTAINER_DOCKER_PASSWORD is preferred
+INFO:    Environment variable SINGULARITY_DOCKER_USERNAME is set, but APPTAINER_DOCKER_USERNAME is preferred
+INFO:    underlay of /etc/localtime required more than 50 (94) bind mounts
+INFO:    underlay of /usr/bin/nvidia-cuda-mps-control required more than 50 (477) bind mounts
+/usr/bin/rm: cannot remove '/usr/local/cuda/compat/lib': Read-only file system
+rm: cannot remove '/usr/local/cuda/compat/lib': Read-only file system
+W1025 14:10:16.318000 22969647965312 torch/distributed/run.py:778] 
+W1025 14:10:16.318000 22969647965312 torch/distributed/run.py:778] *****************************************
+W1025 14:10:16.318000 22969647965312 torch/distributed/run.py:778] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1025 14:10:16.318000 22969647965312 torch/distributed/run.py:778] *****************************************
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188] Starting elastic_operator with launch configs:
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   entrypoint       : multigpu_torchrun.py
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   min_nodes        : 1
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   max_nodes        : 1
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   nproc_per_node   : 4
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   run_id           : 25047
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   rdzv_backend     : c10d
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   rdzv_endpoint    : 172.16.204.29:29500
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   rdzv_configs     : {'timeout': 900}
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   max_restarts     : 0
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   monitor_interval : 0.1
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   log_dir          : /scratch/local/1597902/torchelastic_p0_o1zdk
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188]   metrics_cfg      : {}
+I1025 14:10:16.319000 22969647965312 torch/distributed/launcher/api.py:188] 
+I1025 14:10:16.688000 22969647965312 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python
+I1025 14:10:16.688000 22969647965312 torch/distributed/elastic/agent/server/api.py:702] [default] Rendezvous'ing worker group
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568] [default] Rendezvous complete for workers. Result:
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   restart_count=0
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   master_addr=c0803a-s35.ufhpc
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   master_port=46423
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   group_rank=0
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   group_world_size=1
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   local_ranks=[0, 1, 2, 3]
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   role_ranks=[0, 1, 2, 3]
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   global_ranks=[0, 1, 2, 3]
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   role_world_sizes=[4, 4, 4, 4]
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568]   global_world_sizes=[4, 4, 4, 4]
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:568] 
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/api.py:710] [default] Starting worker group
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/local_elastic_agent.py:182] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I1025 14:10:16.920000 22969647965312 torch/distributed/elastic/agent/server/local_elastic_agent.py:214] Environment variable 'TORCHELASTIC_HEALTH_CHECK_PORT' not found. Do not start health check.
+Loading snapshotLoading snapshotLoading snapshot
+
+
+Loading snapshot
+Resuming training from snapshot at Epoch 40Resuming training from snapshot at Epoch 40Resuming training from snapshot at Epoch 40
+
+
+Resuming training from snapshot at Epoch 40
+[RANK3: local GPU3] Epoch 40 | Batchsize: 32 | Steps: 16[RANK0: local GPU0] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 40 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 40 | Batchsize: 32 | Steps: 16
+
+[RANK3: local GPU3] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 41 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 41 | Batchsize: 32 | Steps: 16
+
+Epoch 40 | Training snapshot saved at snapshot.pt
+[RANK0: local GPU0] Epoch 41 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 42 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 42 | Batchsize: 32 | Steps: 16[RANK2: local GPU2] Epoch 42 | Batchsize: 32 | Steps: 16
+
+
+[RANK0: local GPU0] Epoch 42 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 43 | Batchsize: 32 | Steps: 16[RANK2: local GPU2] Epoch 43 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 43 | Batchsize: 32 | Steps: 16
+
+
+[RANK0: local GPU0] Epoch 43 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 44 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 44 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 44 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 45 | Batchsize: 32 | Steps: 16[RANK2: local GPU2] Epoch 45 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 45 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 46 | Batchsize: 32 | Steps: 16[RANK2: local GPU2] Epoch 46 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 46 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK1: local GPU1] Epoch 47 | Batchsize: 32 | Steps: 16
+[RANK3: local GPU3] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK0: local GPU0] Epoch 48 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 48 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 48 | Batchsize: 32 | Steps: 16
+
+[RANK3: local GPU3] Epoch 49 | Batchsize: 32 | Steps: 16
+[RANK2: local GPU2] Epoch 49 | Batchsize: 32 | Steps: 16[RANK1: local GPU1] Epoch 49 | Batchsize: 32 | Steps: 16
+
+[RANK0: local GPU0] Epoch 49 | Batchsize: 32 | Steps: 16
+I1025 14:12:14.810000 22969647965312 torch/distributed/elastic/agent/server/api.py:888] [default] worker group successfully finished. Waiting 300 seconds for other agents to finish.
+I1025 14:12:14.810000 22969647965312 torch/distributed/elastic/agent/server/api.py:933] Local worker group finished (WorkerState.SUCCEEDED). Waiting 300 seconds for other agents to finish
+I1025 14:12:14.810000 22969647965312 torch/distributed/elastic/agent/server/api.py:946] Done waiting for other agents. Elapsed: 0.00033354759216308594 seconds

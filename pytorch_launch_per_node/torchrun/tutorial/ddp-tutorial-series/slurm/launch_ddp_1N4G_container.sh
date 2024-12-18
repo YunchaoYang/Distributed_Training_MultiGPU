@@ -19,10 +19,10 @@
 # Resource allocation.
 #SBATCH --wait-all-nodes=1
 
-#SBATCH --nodes=2               # How many DGX nodes? Each has 8 A100 GPUs
-#SBATCH --ntasks=2              # How many tasks? One per GPU
+#SBATCH --nodes=1               # How many DGX nodes? Each has 8 A100 GPUs
+#SBATCH --ntasks=1              # How many tasks? One per GPU
 #SBATCH --ntasks-per-node=1     # Split 8 per node for the 8 GPUs
-#SBATCH --gpus-per-task=2       # #GPU per srun step task
+#SBATCH --gpus-per-task=4       # #GPU per srun step task
 
 ##SBATCH --gpus=4                # Total GPUs
 
@@ -34,14 +34,12 @@
 #SBATCH --time=48:00:00
 #SBATCH --output=%x.%j.out
 
-#SBATCH --exclude=c0901a-s[23,35]
+##SBATCH --exclude=c0901a-s[23,35]
 
+#SBATCH --nodelist=c0803a-s35
 
 # export NCCL_DEBUG=WARN #change to INFO if debugging DDP
 
-#module load pytorch/1.10
-# module load conda
-# conda activate pytorch_lightning
 
 nodes=( $( scontrol show hostnames $SLURM_JOB_NODELIST ) )
 nodes_array=($nodes)
@@ -64,8 +62,8 @@ export IMG="/blue/vendor-nvidia/y.yang/test_vila/pytorch:24.06-py3"
 
 srun --export=ALL apptainer exec --nv $IMG \
 torchrun \
---nnodes 2 \
---nproc_per_node 2 \
+--nnodes 1 \
+--nproc_per_node 4 \
 --rdzv_id $RANDOM \
 --rdzv_backend c10d \
 --rdzv_endpoint $head_node_ip:29500 \

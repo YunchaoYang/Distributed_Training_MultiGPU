@@ -1,3 +1,7 @@
 [submodule "MultiGPU-NeMo-ptune"]
 	path = MultiGPU-NeMo-ptune
 	url = git@github.com:YunchaoYang/MultiGPU-NeMo-ptune.git
+
+[submodule "slurm-ray-cluster"]
+	path = slurm-ray-cluster
+	url = git@github.com:YunchaoYang/slurm-ray-cluster.git

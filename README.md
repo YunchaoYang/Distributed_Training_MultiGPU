@@ -1,4 +1,4 @@
-# Multi-GPU Distributed Training Examples
+# Multi-GPU Distributed Training
 
 **Distributed training launch patterns across PyTorch, PyTorch Lightning, MONAI, NVIDIA Modulus, and NVIDIA NeMo, tailored for SLURM and other multi-GPU environments.**
 

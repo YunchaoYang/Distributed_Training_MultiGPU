@@ -1,6 +1,6 @@
 # Multi-GPU Distributed Training
 
-**Distributed training launch patterns across PyTorch, PyTorch Lightning, MONAI, NVIDIA Modulus, and NVIDIA NeMo, tailored for SLURM and other multi-GPU environments.**
+**Distributed training launch patterns with DDP, FSDP across PyTorch, PyTorch Lightning,  MONAI, NVIDIA Modulus, and NVIDIA NeMo, Deepspeed, Ray Train, tailored for SLURM and other multi-GPU environments.**
 
 ---
 
@@ -20,6 +20,7 @@
 | **Deepspeed (SLURM Launch)**               | Launch per process with `srun`         | Deepspeed distributed training configuration  |
 
 Each folder in this repo contains example scripts and job templates tailored to its framework.  
+
 ---
 
 ## 🔎 Overview

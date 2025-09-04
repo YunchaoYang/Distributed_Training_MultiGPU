@@ -11,10 +11,12 @@
 | **PyTorch (torchrun / torch.distributed)** | One process per node via `torchrun`    | Standard DDP; straightforward      |
 | **PyTorch (mp.spawn)**                     | One process per node using `mp.spawn`  | Handy for script-based launches    |
 | **PyTorch + SLURM (`srun`)**               | One process per GPU via `srun`         | Clean integration with SLURM       |
-| **PyTorch Lightning + SLURM **             | One process per GPU via `srun`         | Uses Lightning “Trainer” class     |
+| **PyTorch Lightning + SLURM**             | One process per GPU via `srun`         | Uses Lightning “Trainer” class     |
 | **MONAI (SLURM launch)**                   | `torch.distributed.launch` & `srun`    | Best practices for medical ML      |
-| **NVIDIA Modulus **                        | Launch per process with `srun`         | PDE-oriented scientific workloads  |
+| **NVIDIA Modulus**                        | Launch per process with `srun`         | PDE-oriented scientific workloads  |
 | **NVIDIA NeMo Megatron**                   | Per process launching strategy         | Optimized for LLM training stacks  |
+| **Ray (SLURM Launch)**                     | Launch per process with `srun`         | general distributed communication framework  |
+| **Deepspeed (SLURM Launch)**                     | Launch per process with `srun`         | general distributed communication framework  |
 
 Each folder in this repo contains example scripts and job templates tailored to its framework.  
 ---

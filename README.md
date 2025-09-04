@@ -15,19 +15,10 @@
 | **PyTorch Lightning**                      | One process per GPU via `srun`         | Uses Lightning “Trainer” class     |
 | **MONAI (SLURM, DDP)**                     | `torch.distributed.launch` & `srun`    | Best practices for medical ML      |
 | **NVIDIA Modulus**                         | Launch per process with `srun`         | PDE-oriented scientific workloads  |
-| **NVIDIA NeMo Megatron**                   | Per process launching strategy         | Megatron model parallel for LLM training  |
+| **NVIDIA NeMo Megatron**                   | Per process launching strategy         | Megatron model parallel for LLM training; singularity  |
 | **Ray (SLURM Launch)**                     | Launch per process with `srun`         | general distributed communication framework  |
 | **Deepspeed (SLURM Launch)**               | Launch per process with `srun`         | Deepspeed distributed training configuration  |
 
 Each folder in this repo contains example scripts and job templates tailored to its framework.  
 
 ---
-
-## 🔎 Overview
-
-This repository hosts a variety of examples demonstrating how to launch and manage distributed training jobs using different frameworks and strategies.  
-
-It is designed for:
-- **Researchers** scaling workloads from a single node to multi-node GPU clusters.  
-- **Engineers** experimenting with different frameworks for performance comparison.  
-- **HPC users** integrating PyTorch, MONAI, NeMo, and Modulus into SLURM-based environments.  
